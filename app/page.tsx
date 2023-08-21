@@ -6,6 +6,9 @@ import EmptyState from "./components/EmptyState";
 import ListingCard from "./components/listings/ListingCard";
 import { SafeListing } from "./types";
 
+
+export const dynamic = "force-dynamic";
+
 interface HomeProps {
   searchParams: IListingsParams;
 }
@@ -54,3 +57,4 @@ const Home = async ({ searchParams }: HomeProps) => {
 };
 
 export default Home;
+
